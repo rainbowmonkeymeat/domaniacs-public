@@ -6,7 +6,7 @@ export default function Header() {
             <div className="container">
                 <Link href="/">
                     <a className='navbar-brand'>
-                        Markdown + Nextjs
+                        Domainiacs
                     </a>
                 </Link>
 

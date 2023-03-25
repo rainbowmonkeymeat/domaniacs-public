@@ -14,11 +14,11 @@ export default function Home({ posts }) {
   return (
     <div>
       <NextSeo
-        title="Welcome to my blog home page"
-        description="Build nextjs blog website with Markdown, sitemap, serachbar, category, tag and SEO support"
+        title="Welcome to Domainiacs!"
+        description="Come to Terms With Your Domain Addiction"
         openGraph={{
           url: 'http://officialrajdeepsingh.dev',
-          title: 'Welcome to my blog home page',
+          title: 'Welcome to Domainiacs!',
           description: 'Build nextjs blog website with Markdown, sitemap, serachbar, category, tag and SEO support',
           images: [
             {
@@ -34,6 +34,7 @@ export default function Home({ posts }) {
       />
         <Banner /> 
       <div className="container">
+
         <div className="row">
 
           <div className="col-lg-8">

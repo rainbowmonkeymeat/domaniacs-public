@@ -8,18 +8,18 @@ import { NextSeo } from 'next-seo';
 
 export default function PostPage({ content, frontmatter }) {
   const date = new Date(frontmatter.date)
-  const imageMeta= frontmatter.images.map(
-      image  =>  {
-       const imageUrl =  ImageUrl(image)
-        return {
-        url: imageUrl,
-        width: 1224,
-        height: 724,
-        alt: frontmatter.title,
-        type: 'image/jpeg',
-      }
-     }
-    )
+  // const imageMeta= frontmatter.images.map(
+  //     image  =>  {
+  //      const imageUrl =  ImageUrl(image)
+  //       return {
+  //       url: imageUrl,
+  //       width: 1224,
+  //       height: 724,
+  //       alt: frontmatter.title,
+  //       type: 'image/jpeg',
+  //     }
+  //    }
+  //   )
 
    
   return (
@@ -39,7 +39,7 @@ export default function PostPage({ content, frontmatter }) {
             ],
             tags: frontmatter.tags,
           },
-          images: imageMeta,
+          //images: imageMeta,
           site_name: 'Rajdeep Singh',
         }}      
       />
@@ -47,7 +47,6 @@ export default function PostPage({ content, frontmatter }) {
         <div className="row">
           <div className="col-lg-10 m-auto">
             <div className='card card-page'>
-              <a href={`/blog/${frontmatter.slug}`} > <img className="card-img-top" src={ImageUrl(frontmatter.image)} alt="..." /></a>
 
               <h1 className='post-title mt-2 p-2'>{frontmatter.title}</h1>
               <div className='post-date m-1 p-2'>
